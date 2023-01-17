@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - include_tasks: myfile.yml
+  when: ansible_os_family == "Debian"
