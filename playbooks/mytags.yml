@@ -8,7 +8,7 @@
      state: present
     tags:
     - gitpackage
-    when: ansible_os_family == "Debian""
+    when: ansible_os_family == "Debian"
 
   - name: install tree
     apt:
@@ -16,7 +16,7 @@
      state: present
     tags:
     - treepackage
-    when: ansible_os_family == "Debian""
+    when: ansible_os_family == "Debian"
 
   - name: install wget
     apt:
@@ -24,4 +24,4 @@
      state: present
     tags:
     - wgetpackage
-    when: ansible_os_family == "Debian""
+    when: ansible_os_family == "Debian"
